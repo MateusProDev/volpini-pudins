@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Adicione o link para o CSS do Bootstrap -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <title>VOLPINI PUDINS</title>
@@ -14,7 +15,7 @@
             <a href="index.html"><img src="img/logo-pudim.png" alt="Logo da Loja de Pudim"></a>
         </div>
         <nav>
-            <div class="carrinho" >
+            <div class="carrinho">
                 <a href="#"><img src="img/carrinho.png" alt="Carrinho de Compras"></a>
             </div>
             <div class="pudim">
@@ -33,49 +34,68 @@
                         <span id="total-carrinho">R$0.00</span>
                     </div>
                     <button type="button" onclick="finalizarCompra()">Finalizar Compra</button>
-                </section>                
+                </section>
             </ul>
         </nav>
     </header>
     <main>
         <div class="corpo">
-            <section>
-                <h2>PUDIM</h2>
-                <div class="produto">
-                    <strong>Individual</strong>
-                    <br>
-                    <img src="img/foto_1.png" alt="pudim">
-                    <div>
-                        <span>R$4,99</span>
-                        <button type="button" onclick="adicionarAoCarrinho('P. Individual', 4.99)">Adicionar ao carrinho</button>
+            <!-- Adicione a estrutura do carrossel Bootstrap -->
+            <div id="produto-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <section>
+                            <h2>PUDIM</h2>
+                            <div class="produto">
+                                <strong>Individual</strong>
+                                <br>
+                                <img src="img/foto_1.png" alt="pudim">
+                                <div>
+                                    <span>R$4,99</span>
+                                    <button type="button" onclick="adicionarAoCarrinho('P. Individual', 4.99)">Adicionar ao carrinho</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="carousel-item">
+                        <section>
+                            <h2>PUDIM</h2>
+                            <div class="produto">
+                                <strong>Pequeno</strong>
+                                <br>
+                                <img src="images/produto1.png" alt="pudim">
+                                <div>
+                                    <span>R$14,99</span>
+                                    <button type="button" onclick="adicionarAoCarrinho('P. Pequeno', 14.99)">Adicionar ao carrinho</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="carousel-item">
+                        <section>
+                            <h2>PUDIM</h2>
+                            <div class="produto">
+                                <strong>Grande</strong>
+                                <br>
+                                <img src="images/produto1.png" alt="pudim">
+                                <div>
+                                    <span>28,90</span>
+                                    <button type="button" onclick="adicionarAoCarrinho('P. Grande', 28.90)">Adicionar ao carrinho</button>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
-            </section>
-
-            <section>
-                <h2>PUDIM</h2>
-                <div class="produto">
-                    <strong>Pequeno</strong>
-                    <br>
-                    <img src="images/produto1.png" alt="pudim">
-                    <div>
-                        <span>R$14,99</span>
-                        <button type="button" onclick="adicionarAoCarrinho('P. Pequeno', 14.99)">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2>PUDIM</h2>
-                <div class="produto">
-                    <strong>Grande</strong>
-                    <br>
-                    <img src="images/produto1.png" alt="pudim">
-                    <div>
-                        <span>28,90</span>
-                        <button type="button" onclick="adicionarAoCarrinho('P. Grande', 28.90)">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </section>
+                <a class="carousel-control-prev" href="#produto-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#produto-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <!-- Fim do carrossel Bootstrap -->
         </div>
     </main>
 
@@ -101,6 +121,12 @@
             </ul>
         </div>
     </footer>
+
+    <!-- Adicione os scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
