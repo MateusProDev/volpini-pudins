@@ -100,7 +100,7 @@ pudimMenu.addEventListener('click', () => {
     }
 
    // Função para finalizar a compra
-   function finalizarCompra() {
+   function finalizarCompra("+558585853533") {
     // Construa a mensagem com as informações do carrinho
     let mensagem = "Olá, gostaria de finalizar minha compra. Aqui estão os itens no carrinho:";
 
