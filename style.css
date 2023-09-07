@@ -124,6 +124,7 @@ main {
 .banner_inf img{
     width: 100%;
     height: 500px;
+    margin-bottom: 40px;
 }
 
 section {
@@ -231,7 +232,6 @@ button.finalizar-compra-btn:hover {
 /*estrutura do carrossel*/
 .carousel-control-prev-icon{
     background-color: #333;
-    margin-right: 25px;
 }
 .carousel-control-next-icon {
     background-color: #333;
@@ -249,11 +249,11 @@ button.finalizar-compra-btn:hover {
 /* Estilos da seção "Sobre Mim" */
 #sobre-mim {
     background-color: #f9f9f9;
-    padding: 40px 0;
+    padding: 40px  0 0 0;
     text-align: center;
 }
 .box-sobre-mim{
-    padding: 80px 20px;
+    padding: 60px 20px;
     background-image: url("img/fundo-volpini.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
