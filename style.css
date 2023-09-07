@@ -116,7 +116,14 @@ nav {
 main {
     width: 100%; 
     max-width: 1200px;  
+}
+.corpo{
     padding: 20px;
+}
+
+.banner_inf img{
+    width: 100%;
+    height: 500px;
 }
 
 section {
