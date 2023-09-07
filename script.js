@@ -100,7 +100,7 @@ pudimMenu.addEventListener('click', () => {
     }
 
    // Função para finalizar a compra
-   function finalizarCompra() {
+function finalizarCompra(numeroTelefone) {
     // Construa a mensagem com as informações do carrinho
     let mensagem = "Olá, gostaria de finalizar minha compra. Aqui estão os itens no carrinho:";
 
@@ -112,7 +112,7 @@ pudimMenu.addEventListener('click', () => {
     const mensagemCodificada = encodeURIComponent(mensagem);
 
     // Use o link da API oficial do WhatsApp para abrir o WhatsApp com a mensagem
-    const linkWhatsapp = `https://api.whatsapp.com/send?text=${mensagemCodificada}`;
+    const linkWhatsapp = `https://api.whatsapp.com/send?phone=${numeroTelefone}&text=${mensagemCodificada}`;
 
     // Redirecione para o link do WhatsApp
     window.location.href = linkWhatsapp;
@@ -124,6 +124,10 @@ pudimMenu.addEventListener('click', () => {
     carrinhoItens.length = 0;
     atualizarCarrinho();
 }
+
+// Exemplo de uso:
+finalizarCompra("+558585853533");
+
 
 
     
