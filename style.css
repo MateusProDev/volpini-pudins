@@ -237,7 +237,48 @@ button.finalizar-compra-btn:hover {
     background-color: #333;
     margin-left: 25px;
 }
+.box-value span{
+    font-size: 20px;
+    margin: 0 20px;
+}
+.box-value button{
+    font-size: 14px;
+}
 
+/*seçãp sobre mim*/
+/* Estilos da seção "Sobre Mim" */
+#sobre-mim {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+.box-sobre-mim{
+    padding: 80px 20px;
+    background-image: url("img/fundo-volpini.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sobre-mim-texto h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sobre-mim-texto p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.sobre-mim-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
 
 /* Estilos do rodapé */
 /* Estilos para o rodapé */
