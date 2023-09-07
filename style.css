@@ -230,11 +230,78 @@ button.finalizar-compra-btn:hover {
 
 
 /* Estilos do rodapé */
+/* Estilos para o rodapé */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px 0 10px 40px;
+    padding: 30px 0;
+    text-align: left;
 }
+
+/* Estilos para a seção dos links */
+
+footer h4 {
+    font-size: 18px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ffd700; /* Altere a cor desejada para o hover */
+}
+
+
+/* Estilos para o título "VOLPINI PUDINS" no rodapé */
+footer h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Estilos para as redes sociais no rodapé */
+footer .redes-sociais ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer .redes-sociais ul li {
+    margin: 0 10px;
+}
+
+footer .redes-sociais ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer .redes-sociais ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
 
 footer h3 {
     color: #fff;
@@ -249,7 +316,7 @@ footer h3 {
 }
 
 footer a img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    margin-top: -0.1.0px;
 }
