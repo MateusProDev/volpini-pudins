@@ -220,6 +220,16 @@ button.finalizar-compra-btn {
 button.finalizar-compra-btn:hover {
     background-color: #555;
 }
+/*estrutura do carrossel*/
+.carousel-control-prev-icon{
+    background-color: #333;
+    margin-right: 25px;
+}
+.carousel-control-next-icon {
+    background-color: #333;
+    margin-left: 25px;
+}
+
 
 /* Estilos do rodapé */
 footer {
