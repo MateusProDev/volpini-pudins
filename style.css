@@ -131,7 +131,7 @@ h2 {
 /* Estilos para os produtos */
 
 .produto {
-    width: 315px;
+    width: 100%;
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
