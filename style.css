@@ -234,15 +234,11 @@ button.finalizar-compra-btn:hover {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 30px 0;
+    padding: 30px 10px;
     text-align: left;
 }
 
 /* Estilos para a seção dos links */
-
-footer h4 {
-    font-size: 18px;
-}
 
 footer ul {
     list-style: none;
@@ -254,13 +250,13 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #fff;
+    color: #2189cf;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer ul li a:hover {
-    color: #ffd700; /* Altere a cor desejada para o hover */
+    color: #ffebc5; /* Altere a cor desejada para o hover */
 }
 
 
@@ -271,6 +267,11 @@ footer h3 {
 }
 
 /* Estilos para as redes sociais no rodapé */
+
+.redes-sociais{
+    margin-left: -180px;
+    padding-top: 5px;
+}
 footer .redes-sociais ul {
     list-style: none;
     padding: 0;
@@ -285,8 +286,8 @@ footer .redes-sociais ul li {
 
 footer .redes-sociais ul li a {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-top: -10px;
     border-radius: 50%;
     background-color: #fff;
@@ -309,14 +310,14 @@ footer h3 {
 
 .redes-sociais ul {
     display: flex;
-    margin-left: -40px;
 }
 .redes-sociais ul li{
     display: flex;
 }
 
 footer a img {
-    width: 35px;
-    height: 35px;
-    margin-top: -0.1.0px;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 12px;
+    margin-right: 0.5px;
 }
