@@ -116,7 +116,6 @@ nav {
 main {
     width: 100%; 
     max-width: 1200px;  
-    margin: 0 auto; 
     padding: 20px;
 }
 
@@ -130,7 +129,9 @@ h2 {
 }
 
 /* Estilos para os produtos */
+
 .produto {
+    width: 315px;
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
@@ -140,8 +141,6 @@ h2 {
 
 .produto img {
     width: 100%;
-    height: auto;
-    filter: drop-shadow(4px 4px 4px #333);
 }
 
 span {
