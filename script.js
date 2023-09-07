@@ -115,7 +115,7 @@ pudimMenu.addEventListener('click', () => {
         const mensagemCodificada = encodeURIComponent(mensagem);
     
         // Número de telefone para o qual você deseja enviar a mensagem (substitua pelo seu número real)
-        const numeroTelefone = "+558585853533";
+        const numeroTelefone = "+5585991335208";
     
         // Use o link da API oficial do WhatsApp para abrir o WhatsApp com a mensagem e o número de telefone
         const linkWhatsapp = `https://api.whatsapp.com/send?phone=${numeroTelefone}&text=${mensagemCodificada}`;
@@ -130,9 +130,3 @@ pudimMenu.addEventListener('click', () => {
         carrinhoItens.length = 0;
         atualizarCarrinho();
     }
-    
-
-
-    
-
-
