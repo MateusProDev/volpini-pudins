@@ -1,0 +1,258 @@
+/* Estilos gerais */
+*{
+    color: #333;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #fff7d4;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 80px;
+    height: 50px;
+}
+
+.carrinho img {
+    max-width: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos do menu de hamburguer e da navegação */
+.pudim {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.pudim-line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Media Query para telas menores (até 768px) */
+@media screen and (max-width: 768px) {
+    .pudim {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .nav-links section{
+        width: 280px;
+    }
+
+    .pudim.mostrar-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .pudim-line.mostrar-menu {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 2px 0;
+    }
+
+    .nav-links.mostrar-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        background-color:#fff7d4;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .nav-links.mostrar-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* Media Query para telas médias (768px a 992px) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    /* Estilos específicos para telas médias */
+}
+
+/* Media Query para telas grandes (maiores que 992px) */
+@media screen and (min-width: 993px) {
+    /* Estilos específicos para telas grandes */
+}
+
+/* Media Query para telas extra largas (maiores que 1200px) */
+@media screen and (min-width: 1201px) {
+    /* Estilos específicos para telas extra largas */
+}
+
+/* Estilos do conteúdo principal */
+
+main {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.corpo{
+    margin-right: 40px;
+    
+}
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os produtos */
+.produto {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+span {
+    font-weight: bold;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Estilos para a seção do carrinho */
+section {
+    width: 100%;
+    background-color: #fff7d4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.produto img{
+    filter: drop-shadow(4px 4px 4px #333);
+}
+
+/* Estilos para a lista de itens do carrinho */
+
+.carrinho-itens {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para cada item do carrinho */
+.carrinho-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.carrinho-item:last-child {
+    border-bottom: none; /* Remove a borda inferior do último item */
+}
+
+/* Estilos para o total do carrinho */
+.total-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para o botão Finalizar Compra */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0 10px 40px;
+}
+
+footer h3{
+    color: #fff;
+}
+
+.redes-sociais ul{
+    display: flex;
+    margin-left: -40px;
+}
+
+footer a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
