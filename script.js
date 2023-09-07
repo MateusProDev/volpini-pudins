@@ -100,7 +100,7 @@ pudimMenu.addEventListener('click', () => {
     }
 
    // Função para finalizar a compra
-function finalizarCompra() {
+   function finalizarCompra() {
     // Construa a mensagem com as informações do carrinho
     let mensagem = "Olá, gostaria de finalizar minha compra. Aqui estão os itens no carrinho:";
 
@@ -108,19 +108,23 @@ function finalizarCompra() {
         mensagem += `\n${item.nome}: ${item.quantidade}x - R$${item.subtotal.toFixed(2)}`;
     });
 
-    // Use o link específico do WhatsApp (substitua pelo seu link)
-    const linkWhatsapp = "https://wa.link/pldgyi";
+    // Encode a mensagem para que ela possa ser incluída na URL
+    const mensagemCodificada = encodeURIComponent(mensagem);
 
-    // Abra o link em uma nova janela ou redirecione para ele
-    window.open(linkWhatsapp, "_blank");
+    // Use o link da API oficial do WhatsApp para abrir o WhatsApp com a mensagem
+    const linkWhatsapp = `https://api.whatsapp.com/send?text=${mensagemCodificada}`;
 
-    // Exiba um alerta de compra finalizada
+    // Redirecione para o link do WhatsApp
+    window.location.href = linkWhatsapp;
+
+    // Exiba um alerta de compra finalizada (opcional)
     alert('Compra finalizada!');
 
     // Limpar o carrinho
     carrinhoItens.length = 0;
     atualizarCarrinho();
 }
+
 
     
 
