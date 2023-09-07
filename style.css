@@ -1,11 +1,13 @@
 /* Estilos gerais */
-*{
+* {
     color: #333;
 }
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
 }
 
 header {
@@ -15,6 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao cabeçalho */
 }
 
 .logo img {
@@ -72,7 +75,8 @@ nav {
     .nav-links {
         display: none;
     }
-    .nav-links section{
+
+    .nav-links section {
         width: 280px;
     }
 
@@ -98,9 +102,10 @@ nav {
         position: absolute;
         top: 75px;
         right: 0px;
-        background-color:#fff7d4;
+        background-color: #fff7d4;
         padding: 10px;
         z-index: 1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao menu */
     }
 
     .nav-links.mostrar-menu li {
@@ -109,35 +114,18 @@ nav {
     }
 }
 
-
-
-/* Media Query para telas médias (768px a 992px) */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-    /* Estilos específicos para telas médias */
-}
-
-/* Media Query para telas grandes (maiores que 992px) */
-@media screen and (min-width: 993px) {
-    /* Estilos específicos para telas grandes */
-}
-
-/* Media Query para telas extra largas (maiores que 1200px) */
-@media screen and (min-width: 1201px) {
-    /* Estilos específicos para telas extra largas */
-}
-
 /* Estilos do conteúdo principal */
-
 main {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    
+    width: 100%; /* Alterado para ocupar toda a largura */
+    max-width: 1200px; /* Adiciona largura máxima para o conteúdo principal */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px;
 }
-.corpo{
+
+.corpo {
     margin-right: 40px;
-    
 }
+
 section {
     margin-bottom: 40px;
 }
@@ -152,11 +140,14 @@ h2 {
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave aos produtos */
 }
 
 .produto img {
     width: 100%;
     height: auto;
+    filter: drop-shadow(4px 4px 4px #333);
 }
 
 span {
@@ -171,23 +162,23 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #555;
+}
+
 /* Estilos para a seção do carrinho */
-section {
-    width: 100%;
+section.carrinho {
     background-color: #fff7d4;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave à seção do carrinho */
 }
 
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-.produto img{
-    filter: drop-shadow(4px 4px 4px #333);
 }
 
 /* Estilos para a lista de itens do carrinho */
@@ -221,7 +212,7 @@ h2 {
 }
 
 /* Estilos para o botão Finalizar Compra */
-button {
+button.finalizar-compra-btn {
     background-color: #333;
     color: #fff;
     border: none;
@@ -230,10 +221,9 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+button.finalizar-compra-btn:hover {
     background-color: #555;
 }
-
 
 /* Estilos do rodapé */
 footer {
@@ -242,11 +232,11 @@ footer {
     padding: 10px 0 10px 40px;
 }
 
-footer h3{
+footer h3 {
     color: #fff;
 }
 
-.redes-sociais ul{
+.redes-sociais ul {
     display: flex;
     margin-left: -40px;
 }
