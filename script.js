@@ -1,6 +1,5 @@
 //header
 
-
 const pudimMenu = document.querySelector('.carrinho');
 const navLinks = document.querySelector('.nav-links');
 
@@ -8,7 +7,6 @@ pudimMenu.addEventListener('click', () => {
     navLinks.classList.toggle('mostrar-menu');
 });
 
-// ...
 
     // Array para armazenar os itens no carrinho
     const carrinhoItens = [];
