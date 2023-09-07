@@ -160,6 +160,10 @@ button:hover {
 }
 
 /* Estilos para a seção do carrinho */
+.carinho_compras{
+    margin-left: auto;
+    margin-right: auto;
+}
 section.carrinho {
     background-color: #fff7d4;
     padding: 20px;
