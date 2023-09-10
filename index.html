@@ -34,10 +34,21 @@
                         <span id="total-carrinho">R$0.00</span>
                     </div>
                     <button type="button" onclick="finalizarCompra()">Finalizar Compra</button>
+                    <hr id="line-car">
+                    <nav class="navs">
+                        <ul>
+                            <li><a href="index.html">INICIO</a></li>
+                            <hr>
+                            <li><a href="#sobre-mim">SOBRE NÓS</a></li> 
+                            <hr>
+                            <li><a href="#contato">CONTATO</a></li> 
+                        </ul>
+                    </nav>
                 </section>
             </ul>
         </nav>
     </header>
+    <hr id="line-header">
     <main>
         <div class="banner_inf">
             <img src="img/banner_inf.png" alt="banner informativo">
@@ -54,7 +65,7 @@
                                 <br>
                                 <img src="img/pudim 1.png" alt="pudim">
                                 <div class="box-value">
-                                    <span>R$4,99</span>
+                                    <span>R$ 4,99</span>
                                     <button type="button" onclick="adicionarAoCarrinho('P. Individual', 4.99)">Adicionar ao carrinho</button>
                                 </div>
                             </div>
@@ -68,7 +79,7 @@
                                 <br>
                                 <img src="img/pudim_2.png" alt="pudim">
                                 <div class="box-value">
-                                    <span>R$14,99</span>
+                                    <span>R$ 14,99</span>
                                     <button type="button" onclick="adicionarAoCarrinho('P. Pequeno', 14.99)">Adicionar ao carrinho</button>
                                 </div>
                             </div>
@@ -82,7 +93,7 @@
                                 <br>
                                 <img src="img/pudim_3.png" alt="pudim">
                                 <div class="box-value">
-                                    <span>28,90</span>
+                                    <span>R$ 28,90</span>
                                     <button type="button" onclick="adicionarAoCarrinho('P. Médio', 28.90)">Adicionar ao carrinho</button>
                                 </div>
                             </div>
@@ -102,14 +113,41 @@
             <section id="sobre-mim">
                 <div class="box-sobre-mim">
                     <div class="sobre-mim-texto">
-                        <h2>Sobre a Volpini Pudins</h2>
+                        <h2>Sobre Nós</h2>
                         <p>Somos apaixonados por pudins e pela arte de criar experiências gastronômicas memoráveis. Na Volpini Pudins, nossa missão é levar a doçura da vida para o seu paladar, oferecendo pudins que combinam tradição com inovação.</p>
                         <p>Nossa jornada começou com um sonho de proporcionar a você uma jornada culinária única, onde cada pudim conta uma história e reflete o nosso compromisso com a qualidade e a modernidade. Desde então, temos trabalhado incansavelmente para trazer os melhores sabores para a sua mesa.</p>
-                        <p>Na nossa loja, você encontrará uma seleção cuidadosamente preparada de pudins artesanais, feitos com ingredientes de primeira qualidade e muito carinho. Queremos que você se sinta inspirado e conectado com cada colherada dos nossos pudins.</p>
                     </div>
                 </div>
             </section>
-            
+            <section class="gallery-container">
+                <h4>Conheça nosso trabalho</h4>
+                <div class="gallery">
+                    <div class="gallery-img">
+                        <img src="img/pudim_2.png" alt="fotos">
+                        <p>lorem</p>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="img/pudim_2.png" alt="fotos">
+                        <p>lorem</p>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="img/pudim_2.png" alt="fotos">
+                        <p>lorem</p>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="img/pudim_2.png" alt="fotos">
+                        <p>lorem</p>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery-video">
+                <h4>Videos do Instagram</h4>
+                <div class="video-inst">
+                    <video src="#"></video>
+                    <blockquote class="inst-media" data-instgrm-permlink="" data-instgrm-version="13"></blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+            </section>
         </div>
     </main>
     <footer>
@@ -122,7 +160,7 @@
                     </ul>
                 </div>
             </div>
-            <h3 class="h6">VOLPINI PUDINS</h3>
+            <h3 id="contato" class="h6">VOLPINI PUDINS</h3>
         </div>
         <div class="redes-sociais">
             <ul>
