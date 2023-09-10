@@ -349,7 +349,7 @@ button.finalizar-compra-btn:hover {
     height: auto;
 }
 .gallery-video{
-    padding: 20px;
+    margin: 40px 0 0 -5px;
 }
 
 @keyframes left-center {
